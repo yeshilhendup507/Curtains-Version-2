@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript">
+        function open_curtain() {
+            $("#curtain1").delay(100).animate({ width: 20 }, 1000);
+            $("#curtain2").delay(100).animate({ width: 20 }, 1000);
+            let element = document.getElementById("launch_button");
+            let hidden = element.getAttribute("hidden");
+
+            if (hidden) {
+            element.removeAttribute("hidden");
+            } else {
+            element.setAttribute("hidden", "hidden");
+            }
+            
+        }
+        // function close_curtain() {
+        //     $("#curtain1").animate({ width: 200 }, 1000);
+        //     $("#curtain2").animate({ width: 191 }, 1000);
+        // }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="effect">
+            <img src="Windows.png" id="Pattern">
+
+            <p class="">WEL COME TO ENTERPRISE LEGAL MANAGEMENT SYSTEM </p>
+            <img src="OAG-Logo.png" id="logo">
+            <a href="http://elms.oag.gov.bt/"><br><br><br>
+                <button type="button">Open System</button>
+            </a>
+            <br>
+            <img src="Flowers.png" id="flowers">
+            <img src="Curtain1.png" id="curtain1">
+            <img src="Curtain2.png" id="curtain2">
+        </div><br>
+
+        <div id="curtain_buttons">
+            <input type="button" id="launch_button" value="LAUNCH " onclick="open_curtain();">  
+            <!-- <input type="button" value="CLOSE CURTAIN" onclick="close_curtain();"> -->  
+        </div>
+
+    </div>
+</body>
+
+</html>

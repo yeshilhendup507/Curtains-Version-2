@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    width: 90%;
+    max-height: 50%;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: helvetica;
+    background-image: url(bg.png);
+}
+@media only screen and (max-width: 600px) {
+    body {
+        text-align: center;
+        width: 10%;
+        max-height: 10%;
+        margin: 0 auto;
+        padding: 0px;
+        font-family: helvetica;
+        background-image: url(bg.png);
+    }
+  }
+#wrapper {
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: 995px;
+}
+
+#effect {
+    background-color: #ffffff;
+    position: relative;
+    width: 995px;
+    height: 510px;
+    box-shadow: 0px 0px 10px 0px #610B0B;
+}
+
+#effect p {
+    margin-top: 70px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#curtain1 {
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    height: 520px;
+}
+
+#curtain2 {
+    top: 0px;
+    position: absolute;
+    height: 520px;
+    right: 0px;
+}
+
+#flowers {
+    margin-top: 100px;
+    width: 200px;
+    height: 40px;
+}
+
+#pattern {
+    width: 970px;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+#curtain_buttons input {
+    margin-top: 20px;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+    background-color: #3a3939;
+    border: none;
+    border-bottom: 6px solid #313030;
+    cursor: pointer;
+}
+
+/* #button {
+    margin-top: 180px;
+    background-color: #4CAF50;
+    border-bottom: 6px solid #313030;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+} */
+
+#logo{
+    height: 140px;
+    width: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
